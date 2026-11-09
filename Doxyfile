@@ -1,0 +1,22 @@
+# Doxygen configuration for the personal site (Python).
+# Run:  doxygen Doxyfile      Output: docs/doxygen/html (ignored by git)
+PROJECT_NAME           = "Personal Site"
+PROJECT_BRIEF          = "Day 56 of 100 Days of Code: a personal CV website served by Flask"
+OUTPUT_DIRECTORY       = docs/doxygen
+INPUT                  = src README.md
+FILE_PATTERNS          = *.py *.md
+RECURSIVE              = YES
+USE_MDFILE_AS_MAINPAGE = README.md
+OPTIMIZE_OUTPUT_JAVA   = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+JAVADOC_AUTOBRIEF      = YES
+PYTHON_DOCSTRING       = YES
+SOURCE_BROWSER         = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+QUIET                  = YES
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_AS_ERROR          = NO

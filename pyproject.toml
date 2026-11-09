@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "personal-site"
+version = "0.1.0"
+description = "Day 56 of 100 Days of Code: a personal CV website served by Flask."
+readme = "README.md"
+requires-python = ">=3.13"
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "Jens Tirsvad Nielsen" }]
+# Flask is the only runtime dependency (Business Case BC-001, objective 5).
+dependencies = ["Flask>=3.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.11"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+personal_site = ["presentation/templates/**/*", "presentation/static/**/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+src = ["src", "tests"]
+extend-exclude = ["framework", "docs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N", "D"]
+ignore = ["D203", "D213"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["D"]
+
+[tool.mypy]
+strict = true
+python_version = "3.13"
+mypy_path = "src"
