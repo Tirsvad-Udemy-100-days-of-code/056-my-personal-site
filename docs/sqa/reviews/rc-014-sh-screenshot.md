@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Proposed | Claude for S01 | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-09 | Proposed | Claude for S01 | AI as stand-in for S01 | Initial version | [29172f1] |
 
 ---
 
@@ -56,3 +56,4 @@ Go — all mandatory criteria pass or are not applicable with a stated reason; n
 
 [SH-001]: ../../../scripts/take-screenshot.sh
 [QC-SH-001]: ../../../framework/qc/code/qc-programming-shell.md
+[29172f1]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/29172f16f756862323db521e16614441fbf334fa
