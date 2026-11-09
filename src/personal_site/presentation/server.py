@@ -37,7 +37,6 @@ def create_app(repository: ProfileRepository | None = None) -> Flask:
     )
     get_profile = GetProfile(repository or InCodeProfileRepository())
 
-    @flask_app.route("/")
     def home() -> str:
         """Render the CV home page.
 
@@ -52,6 +51,7 @@ def create_app(repository: ProfileRepository | None = None) -> Flask:
             stylesheet_path=STYLESHEET_PATH,
         )
 
+    flask_app.add_url_rule("/", view_func=home)
     return flask_app
 
 
