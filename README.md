@@ -79,6 +79,10 @@ flask --app personal_site.presentation.server run --debug
 
 ![Lecture 1: the rendered index.html](docs/screenshots/lecture-1-render-html.png)
 
+**Lecture 2: static files.** CSS and images live in a folder called `static`; the template links them with `url_for("static", filename=...)`. A stylesheet changes the background colour. Browsers cache static files, so after a change reload with Ctrl+F5 (or Ctrl+Shift+R) to see it.
+
+![Lecture 2: the stylesheet changes the background](docs/screenshots/lecture-2-static-files.png)
+
 The screenshots are taken in Docker, never on the host desktop (headless Chromium, see `framework/process/gui-testing.md`). To retake one, start Docker and run:
 
 ```bash

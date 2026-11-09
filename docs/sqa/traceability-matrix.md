@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Deprecated | Claude for S01 | AI as stand-in for S01 | Added PY-MIL-001 and RC-009 | [a009116] |
-| 2026-11-09 | Accepted | Claude for S01 | AI as stand-in for S01 | Added PY-MIL-002 and RC-010 | [9c85a90] |
+| 2026-11-09 | Deprecated | Claude for S01 | AI as stand-in for S01 | Added PY-MIL-002 and RC-010 | [9c85a90] |
+| 2026-11-09 | Accepted | Claude for S01 | AI as stand-in for S01 | Added PY-MIL-003 and RC-011 | pending |
 
 ---
 
@@ -32,6 +32,7 @@ Tracks backward and forward links between artifact instances so that traceabilit
 | [MIL-005] | MIL | en | it | [MIL-004] | - | [RC-008] |
 | [PY-MIL-001] | PY | - | - | [MIL-001] | - | [RC-009] |
 | [PY-MIL-002] | PY | - | - | [MIL-002] | - | [RC-010] |
+| [PY-MIL-003] | PY | - | - | [MIL-003] | - | [RC-011] |
 
 ## Concern Coverage
 
@@ -73,5 +74,7 @@ Tracks backward and forward links between artifact instances so that traceabilit
 [PY-MIL-001]: ../../src/personal_site
 [RC-010]: ./reviews/rc-010-py-mil-002.md
 [PY-MIL-002]: ../../src/personal_site
+[RC-011]: ./reviews/rc-011-py-mil-003.md
+[PY-MIL-003]: ../../src/personal_site
 [a009116]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/a0091162db89a18d29c7abeed7f5d2e35c9bbb81
 [9c85a90]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/9c85a901b7139dc1d5d37439ed641714ca6ddd66
