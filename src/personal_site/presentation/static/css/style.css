@@ -1,6 +1,93 @@
-/* Lecture 2: a CSS file in the static folder changes the page background. */
+/* Lecture 2: a CSS file in the static folder changes the page background.
+   Lecture 3: the same file styles the CV site. */
+:root {
+    --background: #1e3a5f;
+    --surface: #274a75;
+    --text: #f5f7fa;
+    --muted: #c5d3e4;
+    --accent: #ffd166;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #1e3a5f;
-    color: #f5f7fa;
-    font-family: system-ui, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 52rem;
+    padding: 2rem 1rem;
+}
+
+a {
+    color: var(--accent);
+}
+
+.hero {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.photo {
+    border: 4px solid var(--accent);
+    border-radius: 50%;
+    height: 12rem;
+    object-fit: cover;
+    object-position: 75% 20%;
+    width: 12rem;
+}
+
+.intro {
+    flex: 1 1 18rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+h2 {
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.headline {
+    color: var(--accent);
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+section {
+    background-color: var(--surface);
+    border-radius: 0.75rem;
+    margin-bottom: 1.25rem;
+    padding: 1rem 1.5rem;
+}
+
+.skills {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.skills th,
+.skills td {
+    padding: 0.35rem 0;
+    text-align: left;
+}
+
+footer {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 2rem;
 }

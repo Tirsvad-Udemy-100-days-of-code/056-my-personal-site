@@ -21,3 +21,15 @@ STATIC_FOLDER: str = "static"
 
 ## @brief Run the development server in debug mode (auto reload). Development only.
 DEBUG_MODE: bool = True
+
+## @brief Highest star rating a skill can have.
+MAX_STARS: int = 5
+
+## @brief Lowest star rating a skill can have.
+MIN_STARS: int = 1
+
+## @brief Path of the profile photo, relative to the static folder.
+PROFILE_PHOTO_PATH: str = "images/jens.jpg"
+
+## @brief Path of the stylesheet, relative to the static folder.
+STYLESHEET_PATH: str = "css/style.css"
