@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jens Tirsvad Nielsen</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta name="description" content="{{ profile.name }}: {{ profile.headline }}">
+    <title>{{ profile.name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename=stylesheet_path) }}">
 </head>
 <body>
-    <h1>Hi, I am Jens Tirsvad Nielsen</h1>
+    <header class="hero">
+        <img class="photo" src="{{ url_for('static', filename=photo_path) }}"
+             alt="Portrait of {{ profile.name }}">
+        <div class="intro">
+            <h1>{{ profile.name }}</h1>
+            <p class="headline">{{ profile.headline }}</p>
+            {% for paragraph in profile.about %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
+        </div>
+    </header>
+
+    <main>
+        <section aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <table class="skills">
+                <tbody>
+                    {% for skill in profile.skills %}
+                    <tr>
+                        <th scope="row">{{ skill.name }}</th>
+                        <td>
+                            <span role="img"
+                                  aria-label="{{ skill.stars }} out of {{ max_stars }} stars">{{ "⭐" * skill.stars }}</span>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="education-heading">
+            <h2 id="education-heading">Education</h2>
+            {% for entry in profile.education %}
+            <p><strong>{{ entry.programme }}</strong><br>
+               {{ entry.school }}<br>
+               <span class="muted">Focus: {{ entry.focus }}</span></p>
+            {% endfor %}
+        </section>
+
+        <section aria-labelledby="interests-heading">
+            <h2 id="interests-heading">Interests</h2>
+            <ul>
+                {% for interest in profile.interests %}
+                <li>{{ interest }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <section aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <ul>
+                {% for project in profile.projects %}
+                <li><strong>{{ project.name }}</strong>: {{ project.description }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built with Flask for day 56 of the Udemy course
+           "100 Days of Code: The Complete Python Pro Bootcamp".
+           The layout follows the course's public CV example
+           (<a href="https://angelabauer.github.io/cv/">angelabauer.github.io/cv</a>);
+           the HTML and CSS are written for this project.</p>
+    </footer>
 </body>
 </html>

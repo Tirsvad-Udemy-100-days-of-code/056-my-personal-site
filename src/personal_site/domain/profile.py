@@ -30,8 +30,7 @@ class Skill:
             raise InvalidSkillError("A skill needs a name.")
         if not MIN_STARS <= self.stars <= MAX_STARS:
             raise InvalidSkillError(
-                f"Stars must be between {MIN_STARS} and {MAX_STARS}, "
-                f"got {self.stars}."
+                f"Stars must be between {MIN_STARS} and {MAX_STARS}, got {self.stars}."
             )
 
 
