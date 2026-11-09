@@ -73,6 +73,5 @@ Tracks backward and forward links between artifact instances so that traceabilit
 [PY-MIL-001]: ../../src/personal_site
 [RC-010]: ./reviews/rc-010-py-mil-002.md
 [PY-MIL-002]: ../../src/personal_site
-[d32718e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/d32718e43960fc70996a1bc58979d71aa42046ef
 [a009116]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/a0091162db89a18d29c7abeed7f5d2e35c9bbb81
 [9c85a90]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/9c85a901b7139dc1d5d37439ed641714ca6ddd66
