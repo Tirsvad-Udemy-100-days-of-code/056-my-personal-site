@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Proposed | Claude for S01 | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-09 | Proposed | Claude for S01 | AI as stand-in for S01 | Initial version | [618f0b6] |
 
 ---
 
@@ -59,3 +59,4 @@ Go — all mandatory criteria pass or are not applicable with a stated reason; n
 
 [PY-MIL-003]: ../../../src/personal_site
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
+[618f0b6]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/618f0b62e493ed9887a7acc7c1f61107d50499ca
