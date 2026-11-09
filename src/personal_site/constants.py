@@ -18,3 +18,6 @@ TEMPLATES_FOLDER: str = "templates"
 
 ## @brief Name of the folder that holds static files (Flask convention).
 STATIC_FOLDER: str = "static"
+
+## @brief Run the development server in debug mode (auto reload). Development only.
+DEBUG_MODE: bool = True
