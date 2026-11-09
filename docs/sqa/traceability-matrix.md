@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-09 | Deprecated | Claude for S01 | AI as stand-in for S01 | Initial version | [d32718e] |
-| 2026-11-09 | Accepted | Claude for S01 | AI as stand-in for S01 | Added PY-MIL-001 and RC-009 | pending |
+| 2026-11-09 | Accepted | Claude for S01 | AI as stand-in for S01 | Added PY-MIL-001 and RC-009 | [a009116] |
 
 ---
 
@@ -71,3 +71,4 @@ Tracks backward and forward links between artifact instances so that traceabilit
 [RC-009]: ./reviews/rc-009-py-mil-001.md
 [PY-MIL-001]: ../../src/personal_site
 [d32718e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/d32718e43960fc70996a1bc58979d71aa42046ef
+[a009116]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/a0091162db89a18d29c7abeed7f5d2e35c9bbb81
