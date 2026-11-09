@@ -1,0 +1,6 @@
+/* Lecture 2: a CSS file in the static folder changes the page background. */
+body {
+    background-color: #1e3a5f;
+    color: #f5f7fa;
+    font-family: system-ui, sans-serif;
+}
