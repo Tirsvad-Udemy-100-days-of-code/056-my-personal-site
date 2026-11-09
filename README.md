@@ -23,7 +23,7 @@ The repository follows the assignment's three lecture steps. Each step is one mi
 
 | Folder | What it holds |
 | --- | --- |
-| `src/personal_site/` | The Flask application, split into `domain`, `application`, `infrastructure` and `presentation` layers; `constants.py` holds every constant |
+| `src/personal_site/` | The Flask application (`presentation/templates` and `presentation/static` hold the HTML, CSS and photo), split into `domain`, `application`, `infrastructure` and `presentation` layers; `constants.py` holds every constant |
 | `tests/` | `pytest` tests: `unit`, `integration` and `e2e` |
 | `docs/` | Project documents, wiki pages and screenshots |
 | `Doxyfile` | Configuration for the Doxygen documentation of the source |
@@ -83,10 +83,16 @@ flask --app personal_site.presentation.server run --debug
 
 ![Lecture 2: the stylesheet changes the background](docs/screenshots/lecture-2-static-files.png)
 
+**Lecture 3: a website template.** HTML goes in `templates/`, CSS and images in `static/`, and every path is written with `url_for("static", ...)`. The course's template zip link had expired (HTTP 403), so the layout follows the course's public CV example ([angelabauer.github.io/cv](https://angelabauer.github.io/cv/)); the HTML and CSS are written for this project and no third-party code is copied. The page is filled from a `Profile` (name, skills, education, interests, projects) that the `GetProfile` use case reads through the `ProfileRepository` port.
+
+![Lecture 3: the personal CV site](docs/screenshots/lecture-3-cv-site.png)
+
+To make the site your own, edit the data in `src/personal_site/infrastructure/in_code_profile_repository.py` and replace `src/personal_site/presentation/static/images/jens.jpg`.
+
 The screenshots are taken in Docker, never on the host desktop (headless Chromium, see `framework/process/gui-testing.md`). To retake one, start Docker and run:
 
 ```bash
-bash scripts/take-screenshot.sh lecture-1-render-html.png / 1000 400
+bash scripts/take-screenshot.sh lecture-3-cv-site.png / 1000 1450
 ```
 
 ## 🧪 Tests
