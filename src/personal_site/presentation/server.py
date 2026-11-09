@@ -27,7 +27,6 @@ def create_app() -> Flask:
         static_folder=STATIC_FOLDER,
     )
 
-    @flask_app.route("/")
     def home() -> str:
         """Render the home page.
 
@@ -36,6 +35,7 @@ def create_app() -> Flask:
         """
         return render_template("index.html")
 
+    flask_app.add_url_rule("/", view_func=home)
     return flask_app
 
 
