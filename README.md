@@ -25,7 +25,7 @@ The repository follows the assignment's three lecture steps. Each step is one mi
 | --- | --- |
 | `src/personal_site/` | The Flask application (`presentation/templates` and `presentation/static` hold the HTML, CSS and photo), split into `domain`, `application`, `infrastructure` and `presentation` layers; `constants.py` holds every constant |
 | `tests/` | `pytest` tests: `unit`, `integration` and `e2e` |
-| `docs/` | Project documents, wiki pages and screenshots |
+| `docs/` | Project documents, the wiki pages (`docs/wiki/`, in English, Danish and Bahasa Malaysia) and the screenshots |
 | `Doxyfile` | Configuration for the Doxygen documentation of the source |
 
 ## 📋 Requirements
@@ -112,7 +112,7 @@ GNU Affero General Public License v3.0, see [LICENSE][license].
 ## 🔗 Links
 
 - [Repository][repository]
-- [Documentation][documentation]
+- [Wiki: what each lecture step taught][documentation] (English, Dansk, Bahasa Malaysia)
 - [Issue tracker][issues]
 
 ## 📎 Appendix: Project documents
