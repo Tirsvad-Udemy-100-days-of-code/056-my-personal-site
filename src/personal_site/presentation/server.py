@@ -1,12 +1,18 @@
-"""Flask server of the personal site (lecture 1: Hello World).
+"""Flask server of the personal site (lecture 1: render HTML).
 
 @file
 @brief Creates the Flask application and defines the home route.
 """
 
-from flask import Flask
+from flask import Flask, render_template
 
-from personal_site.constants import DEBUG_MODE, DEFAULT_HOST, DEFAULT_PORT
+from personal_site.constants import (
+    DEBUG_MODE,
+    DEFAULT_HOST,
+    DEFAULT_PORT,
+    STATIC_FOLDER,
+    TEMPLATES_FOLDER,
+)
 
 
 def create_app() -> Flask:
@@ -15,16 +21,20 @@ def create_app() -> Flask:
     @brief Application factory.
     @return The configured Flask application.
     """
-    flask_app = Flask(__name__)
+    flask_app = Flask(
+        __name__,
+        template_folder=TEMPLATES_FOLDER,
+        static_folder=STATIC_FOLDER,
+    )
 
     @flask_app.route("/")
     def home() -> str:
-        """Answer the home route with a plain string.
+        """Render the home page.
 
-        @brief Lecture 1, step 1: the Hello World route.
-        @return The text shown in the browser.
+        @brief Lecture 1, step 2: render `templates/index.html`.
+        @return The HTML of the home page.
         """
-        return "Hello, World!"
+        return render_template("index.html")
 
     return flask_app
 
