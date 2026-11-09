@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Proposed | Claude for S01 | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-09 | Proposed | Claude for S01 | AI as stand-in for S01 | Initial version | [a7433a4] |
 
 ---
 
@@ -43,3 +43,4 @@ Go — criterion 14 passes; with RC-013 every applicable criterion of QC-WIKI-00
 [WIKI-001]: ../../wiki
 [QC-WIKI-001]: ../../../framework/qc/artifacts/qc-wiki.md
 [RC-013]: ./rc-013-wiki.md
+[a7433a4]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/a7433a40de7119feff442970850ee3fe45ca604a
