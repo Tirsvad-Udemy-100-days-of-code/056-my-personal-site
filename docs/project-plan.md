@@ -30,11 +30,11 @@ This plan schedules the five gateways of the personal site project over the one-
 
 | Gateway | Document | Window | Decision date | Owner | Stories | Main deliverable | Milestone |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| G1 Project setup | [MIL-001] | 2026-11-09 | 2026-11-09 | S01 | none (technical tasks) | Project skeleton | |
-| G2 Lecture 1 | [MIL-002] | 2026-11-10 | 2026-11-10 | S01 | none (technical tasks) | Rendered `index.html` | |
-| G3 Lecture 2 | [MIL-003] | 2026-11-11 | 2026-11-11 | S01 | none (technical tasks) | Static CSS served | |
-| G4 Lecture 3 | [MIL-004] | 2026-11-12 | 2026-11-12 | S01 | none (technical tasks) | Personal CV site | |
-| G5 Documentation | [MIL-005] | 2026-11-13 | 2026-11-13 | S01 | none (technical tasks) | README, wiki, metadata | |
+| G1 Project setup | [MIL-001] | 2026-11-09 | 2026-11-09 | S01 | none (technical tasks) | Project skeleton | [Milestone 1] |
+| G2 Lecture 1 | [MIL-002] | 2026-11-10 | 2026-11-10 | S01 | none (technical tasks) | Rendered `index.html` | [Milestone 2] |
+| G3 Lecture 2 | [MIL-003] | 2026-11-11 | 2026-11-11 | S01 | none (technical tasks) | Static CSS served | [Milestone 3] |
+| G4 Lecture 3 | [MIL-004] | 2026-11-12 | 2026-11-12 | S01 | none (technical tasks) | Personal CV site | [Milestone 4] |
+| G5 Documentation | [MIL-005] | 2026-11-13 | 2026-11-13 | S01 | none (technical tasks) | README, wiki, metadata | [Milestone 5] |
 
 ```plantuml
 @startgantt
@@ -82,7 +82,6 @@ A No-Go on a gateway stops the chain at that gateway; later dates move by the da
 ## Open Issues
 
 - The licence of the CV template is not stated by the course; MIL-004 records what is found.
-- The Milestone links in the Gateway Schedule are filled after `sync-project.sh --apply`.
 
 ---
 
@@ -94,3 +93,8 @@ A No-Go on a gateway stops the chain at that gateway; later dates move by the da
 [MIL-004]: ./milestones/mil-004-lecture-3-cv-site.md
 [MIL-005]: ./milestones/mil-005-documentation-and-wiki.md
 [d32718e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/d32718e43960fc70996a1bc58979d71aa42046ef
+[Milestone 1]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/milestone/371
+[Milestone 2]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/milestone/372
+[Milestone 3]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/milestone/373
+[Milestone 4]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/milestone/374
+[Milestone 5]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/milestone/375

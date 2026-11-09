@@ -54,7 +54,7 @@ for _ in $(seq 1 90); do
 done
 docker logs "$app" 2>&1 | grep -q "Running on" || {
 	docker logs "$app" >&2
-	echo "app did not start" >&2
+	echo "error: the application did not start" >&2
 	exit 1
 }
 
