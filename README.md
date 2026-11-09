@@ -61,7 +61,29 @@ Leave the environment with `deactivate`. Use `".[dev]"` instead of `".[test]"` t
 
 ## ▶️ Run
 
-The web application is added in the next milestone (lecture 1). Until then there is nothing to start; the package imports and its tests run.
+With the virtual environment active, start the development server (debug mode, auto reload) and open <http://127.0.0.1:5000/>:
+
+```bash
+python -m personal_site
+```
+
+Or use Flask's own command:
+
+```bash
+flask --app personal_site.presentation.server run --debug
+```
+
+### 📸 Lecture steps
+
+**Lecture 1: render HTML.** The route `/` renders `templates/index.html` with `render_template`. HTML files must live in a folder called `templates`.
+
+![Lecture 1: the rendered index.html](docs/screenshots/lecture-1-render-html.png)
+
+The screenshots are taken in Docker, never on the host desktop (headless Chromium, see `framework/process/gui-testing.md`). To retake one, start Docker and run:
+
+```bash
+bash scripts/take-screenshot.sh lecture-1-render-html.png / 1000 400
+```
 
 ## 🧪 Tests
 
