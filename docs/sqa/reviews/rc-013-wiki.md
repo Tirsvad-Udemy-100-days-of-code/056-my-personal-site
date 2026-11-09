@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Proposed | Claude for S01 | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-09 | Proposed | Claude for S01 | AI as stand-in for S01 | Initial version | [21dcc9f] |
 
 ---
 
@@ -57,3 +57,4 @@ Go-with-conditions — fifteen criteria pass or are not applicable; criterion 14
 
 [WIKI-001]: ../../wiki
 [QC-WIKI-001]: ../../../framework/qc/artifacts/qc-wiki.md
+[21dcc9f]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/21dcc9f70e23f1573aeea2eac8c417e556855761
