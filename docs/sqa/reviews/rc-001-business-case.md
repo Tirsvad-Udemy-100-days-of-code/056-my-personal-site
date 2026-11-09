@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Proposed | Claude for S01 | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-09 | Proposed | Claude for S01 | AI as stand-in for S01 | Initial version | [d32718e] |
 
 ---
 
@@ -65,3 +65,4 @@ Go — all eight criteria and all ten language and domain criteria pass; no bloc
 [BC-001]: ../../business-case.md
 [QC-BC-001]: ../../../framework/qc/artifacts/qc-business-case.md
 [QC-LANG-001]: ../../../framework/qc/artifacts/qc-language-domain.md
+[d32718e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/d32718e43960fc70996a1bc58979d71aa42046ef

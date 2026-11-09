@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Accepted | Claude for S01 | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-09 | Accepted | Claude for S01 | AI as stand-in for S01 | Initial version | [d32718e] |
 
 ---
 
@@ -81,3 +81,4 @@ Authored and reviewed in autonomous mode: the AI acts as stand-in for S01, not i
 ---
 
 [BC-001]: ./business-case.md
+[d32718e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/d32718e43960fc70996a1bc58979d71aa42046ef

@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Accepted | Claude for S01 | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-09 | Accepted | Claude for S01 | AI as stand-in for S01 | Initial version | [d32718e] |
 
 ---
 
@@ -93,3 +93,4 @@ A No-Go on a gateway stops the chain at that gateway; later dates move by the da
 [MIL-003]: ./milestones/mil-003-lecture-2-static-files.md
 [MIL-004]: ./milestones/mil-004-lecture-3-cv-site.md
 [MIL-005]: ./milestones/mil-005-documentation-and-wiki.md
+[d32718e]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-my-personal-site/commit/d32718e43960fc70996a1bc58979d71aa42046ef
